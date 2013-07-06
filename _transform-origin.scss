@@ -1,0 +1,7 @@
+@mixin transform-origin ($values) {
+	-webkit-transform-origin: $values;
+    -moz-transform-origin:    $values;
+    -ms-transform-origin:     $values;
+    -o-transform-origin:      $values;
+    transform-origin:         $values;
+}
