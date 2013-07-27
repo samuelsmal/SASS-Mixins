@@ -1,0 +1,5 @@
+@mixin transition-property ($value) {
+  -webkit-transition-property: $value;
+     -moz-transition-property: $value;
+          transition-property: $value;
+}

@@ -1,0 +1,5 @@
+@mixin transition-duration ($value) {
+  -webkit-transition-duration: $value;
+     -moz-transition-duration: $value;
+          transition-duration: $value;
+}
