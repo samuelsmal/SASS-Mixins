@@ -1,4 +1,4 @@
-@mixin linear-gradient($prefixed_angle, $colour-stops...) {
+@mixin linear-gradient($angle, $colour-stops...) {
 
 	$to_colour: nth($colour-stops, length($colour-stops));
 
@@ -26,10 +26,10 @@
 	background-color: $to_colour; /* Fallback Color */
 
 	background-image: -webkit-gradient(linear, $_webkit_angle, from(nth($colour-stops, 1)), to(#{to_colour}));
-	background-image: -webkit-linear-gradient($_angle-with-vendor-prefix, $color-stops);
-	background-image: -moz-linear-gradient($_angle-with-vendor-prefix, $color-stops);
-	background-image: -o-linear-gradient($_angle-with-vendor-prefix, $color-stops);
-	background-image: linear-gradient($_angle, $color-stops);
+	background-image: -webkit-linear-gradient($_angle-with-vendor-prefix, $colour-stops);
+	background-image: -moz-linear-gradient($_angle-with-vendor-prefix, $colour-stops);
+	background-image: -o-linear-gradient($_angle-with-vendor-prefix, $colour-stops);
+	background-image: linear-gradient($_angle, $colour-stops);
 
 	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='nth($colour-stops, 1)', EndColorStr='$to_colour');
 }
